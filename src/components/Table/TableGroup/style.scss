@@ -1,0 +1,42 @@
+.table-group {
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__cell {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid black;
+
+    &--header {
+      background-color: #7FB5B5;
+      color: #FFFFFF;
+      border-radius: 0px;
+      font-weight: bold;
+      font-size: 24px;
+
+      @media (max-width: 480px) {
+        font-size: 18px;
+      }
+
+      &:first-child {
+        border-radius: 8px 0px 0px 0px;
+      }
+
+      &:last-child {
+        border-radius: 0px 8px 0px 0px;
+      }
+    }
+  }
+
+  &__icon {
+    transform: rotate(45deg);
+    width: 16px;
+    margin-right: 8px;
+  }
+}
